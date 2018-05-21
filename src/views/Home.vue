@@ -6,9 +6,13 @@
     <div class="type">
       <div class="item">
         <img src="../assets/logo.png" alt="" style="height: 160px">
+        <p>(0)</p>
+        <p>采购审批</p>
       </div>
       <div class="item">
         <img src="../assets/logo.png" alt="" style="height: 160px">
+        <p>(0)</p>
+        <p>订单审批</p>
       </div>
     </div>
   </div>
@@ -17,9 +21,19 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
+import { Toast } from 'mint-ui';
 
 export default {
   name: 'home',
+  created(){
+      this.$nextTick(() => {
+          this.$http.post('v2/book/1220562',{}).then((response) => {
+              console.log('Data',response);
+          }).catch((err) => {
+              Toast('网络错误'+err);
+          });
+      })
+  },
   components: {
     HelloWorld
   }
