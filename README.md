@@ -38,9 +38,17 @@ npm run serve & npm run build
 
 
 # 文档
+```
 vue 2.0                                             https://cn.vuejs.org/
+
 @vue/cli 3.0                                        https://github.com/vuejs/vue-cli
+
 vue-router                                          https://router.vuejs.org/zh-cn/
+
 vuex                                                https://vuex.vuejs.org/
+
 mint-ui                                             http://mint-ui.github.io/#!/zh-cn
+
 axios                                               https://www.kancloud.cn/yunye/axios/234845
+
+```
