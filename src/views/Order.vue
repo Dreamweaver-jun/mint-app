@@ -12,12 +12,9 @@
       <mt-tab-container-item id="1">
         <div class="search">
           <mt-search v-model="value">
-            <mt-cell
-                    v-for="(item, index) in result1"
-                    :key="index"
-                    :title="item.title"
-                    :value="item.value">
-            </mt-cell>
+            <mt-loadmore :bottom-method="loadBottom" :bottom-all-loaded="allLoaded" :bottomPullText="'上拉加载...'" :bottomDropText="'释放加载...'" :bottomLoadingText="'正在加载...'" ref="loadmore">
+              <ul><li v-for="item in list">{{ item }}</li></ul>
+            </mt-loadmore>
           </mt-search>
         </div>
       </mt-tab-container-item>
@@ -63,7 +60,7 @@
 
 <script>
 
-    import { Navbar, TabItem, Search } from 'mint-ui';
+    import { Navbar, TabItem, Search, Loadmore } from 'mint-ui';
 
     export default {
         name: 'order',
@@ -71,6 +68,56 @@
             return {
                 selected: "1",
                 value: '输入订单',
+                allLoaded: false,
+                list: [
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                    'aaaaaaaaaaaaa',
+                ],
                 result1: [
                     {title: '待确认11111', value:11111111},
                     {title: '待确认22222', value:22222222},
@@ -108,6 +155,13 @@
                 ]
             }
         },
+        methods: {
+            loadBottom() {
+                console.log('加载中...');
+                //this.allLoaded = true;
+                this.$refs.loadmore.onBottomLoaded();
+            }
+        },
         components: {
             Navbar, TabItem, Search
         }
@@ -140,8 +194,13 @@
     }
     .order-content {
       .mint-search-list {
-        padding: 52px 0 150px 0;
+        padding: 52px 0 110px 0;
+        .mint-search-list-warp {
+          height: 100%;
+          overflow: auto;
+        }
       }
     }
   }
 </style>
+
