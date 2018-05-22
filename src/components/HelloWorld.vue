@@ -15,7 +15,7 @@ export default {
 
       MessageBox({
           title: '提示',
-          message: '确定执行此操作?',
+          message: '确定执行此操作吗?',
           showCancelButton: true
       });
 
