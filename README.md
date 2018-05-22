@@ -12,7 +12,7 @@ npm run serve & npm run build
 
 # 目录结构
 
-
+```
 ├─vue.config.js                                     配置文件（自己创建）
 │
 ├─public
@@ -35,6 +35,7 @@ npm run serve & npm run build
             Home.vue                                首页组件
             Order.vue                               订单组件
             User.vue                                我的信息组件
+```
 
 
 # 文档
