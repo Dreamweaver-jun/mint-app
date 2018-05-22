@@ -13,73 +13,26 @@ npm run serve & npm run build
 # 目录结构
 
 
-<p>
-    ├─vue.config.js&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //配置文件（自己创建）
-</p>
-<p>
+├─vue.config.js                                     配置文件（自己创建）
+│
+├─public
+│      favicon.ico                                  ico图标
+│      index.html                                   index.html
+│
+└─src                                               资源目录
+    │  App.vue                                      主框架
+    │  main.js                                      入口文件
+    │  router.js                                    路由文件
+    │  store.js                                     状态文件 vuex
     │
-</p>
-<p>
-    ├─public
-</p>
-<p>
-    │&nbsp; &nbsp; &nbsp; favicon.ico&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//ico图标
-</p>
-<p>
-    │&nbsp; &nbsp; &nbsp; index.html&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //index.html
-</p>
-<p>
+    ├─assets                                        资源目录
+    │      logo.png                                 logo
     │
-</p>
-<pre class="brush:html;toolbar:false"><br/></pre>
-<p>
-    └─src&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //资源目录
-</p>
-<p>
-    &nbsp; &nbsp; │&nbsp; App.vue&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//主框架
-</p>
-<p>
-    &nbsp; &nbsp; │&nbsp; main.js&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//入口文件
-</p>
-<p>
-    &nbsp; &nbsp; │&nbsp; router.js&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//路由文件
-</p>
-<p>
-    &nbsp; &nbsp; │&nbsp; store.js&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //状态文件 vuex
-</p>
-<p>
-    &nbsp; &nbsp; │
-</p>
-<p>
-    &nbsp; &nbsp; ├─assets&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//资源目录
-</p>
-<p>
-    &nbsp; &nbsp; │&nbsp; &nbsp; &nbsp; logo.png&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //logo
-</p>
-<p>
-    &nbsp; &nbsp; │
-</p>
-<p>
-    &nbsp; &nbsp; ├─components&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//公共组件目录
-</p>
-<p>
-    &nbsp; &nbsp; │&nbsp; &nbsp; &nbsp; HelloWorld.vue&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //测试组件
-</p>
-<p>
-    &nbsp; &nbsp; │
-</p>
-<p>
-    &nbsp; &nbsp; └─views&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //视图目录
-</p>
-<p>
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Home.vue&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//首页组件
-</p>
-<p>
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Order.vue&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //订单组件
-</p>
-<p>
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; User.vue&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//我的信息组件
-</p>
-<p>
-    <br/>
-</p>
+    ├─components                                    公共组件目录
+    │      HelloWorld.vue                           测试组件
+    │
+    └─views                                         视图目录
+            Home.vue                                首页组件
+            Order.vue                               订单组件
+            User.vue                                我的信息组件
+
