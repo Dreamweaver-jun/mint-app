@@ -1,6 +1,21 @@
 # wechat
 wechat demo
 
+# 优势
+```
+MVVM模式，数据与DOM解耦
+
+组件化开发，增强模块的复用性
+
+自动化构建，ES6、css预处理，提高开发效率
+
+代码混淆、压缩，文件添加hash值，提升性能
+
+前端测试
+...
+
+```
+
 # 技术栈
 vue-cli3.0 + vue-router + axios + vuex + mint-ui + ES6 + sass
 
